@@ -6,14 +6,11 @@
         </ion-item>
     </ion-list>
     <div padding>
-        <button (click)="getMovies()">Get rating</button>
+        <button class ="button-block" (click)="getMovies()">Get rating</button>
     </div>
     <ion-card>
         <ion-card-header>
-            {{ movieTitle }}
+        {{movieTitle}} {{ movieRating }}
         </ion-card-header>
-        <ion-card-content>
-            {{ movieRating }}
-        </ion-card-content>
     </ion-card>
 </ion-content>
